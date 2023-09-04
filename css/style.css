@@ -49,14 +49,6 @@ h1 {
     background-color: var(--background);
 }
 
-.container {
-
-}
-
-img {
-
-}
-
 .section__left {
     background: url(../img/bg.jpg);
     background-size: cover;
@@ -143,6 +135,7 @@ img {
     border-bottom: 1px solid var(--border__dipper);
 }
 
+/* ------- form --------  */
 .label__text {
     color: var(--second__text)
 }
@@ -167,9 +160,14 @@ img {
     color: black;
 }
 
-
-.type__radio {
-    margin-top: 20px;
+.form_radio {
+    margin: 20px 0;
     display: flex;
     justify-content: space-between;
+}
+
+input:checked:focus {
+    color: #0076B6;
+    background-color: #0076B6;
+    background: #0076B6;
 }
