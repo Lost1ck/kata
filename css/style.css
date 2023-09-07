@@ -24,6 +24,8 @@
 
 body {
 	font-family: 'Barlow-Light';
+    background-color: var(--background);
+    overflow: hidden;
 }
 
 a {
@@ -34,6 +36,11 @@ button {
     border: none;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .flex {
     display: flex;
 }
@@ -41,16 +48,24 @@ button {
 h1 {
     font-size: 2em;
     font-family: sans-serif;
+    color: var(--second__text);
+    padding-bottom: 10px;
 }
 
+h2 {
+    color: var(--second__text);
+}
+
+h3 {
+    color: var(--second__text);
+    padding-bottom: 30px;
+}
+
+    /* ---- main ----  */
 .main {
-    padding: 30px;
-    background-color: var(--background);
-}
-
-.block {
+    width: 1300px;
+    margin: 30px;
     background-color: var(--white);
-    height: 750px;
 }
 
 .img__logo {
@@ -61,9 +76,8 @@ h1 {
 }
 
 .img__bg {
-    width: 700px;
+    width: 650px;
     height: 750px;
-    background-size: auto;
 }
 
 .section__right {
@@ -74,39 +88,47 @@ h1 {
     padding-left: 50px;
 }
 
+    /* ---- section__right ---- */
+
 .reg {
-    padding-top: 20px;
+    margin-top: 30px;
 }
 
 .reg__buttons {
     align-items: center;
-    margin: 10px 0;
     justify-content: space-between;
 }
 
-.reg-left {
+.reg-button__left {
     color: var(--white);
-    text-align: center;
-    padding: 10px 50px 10px 10px;
+    align-items: center;
+    padding: 10px 80px 10px 10px;
     background-color: var(--button__fb);
 }
 
+.reg-button__right {
+    color: var(--white);
+    align-items: center;
+    padding: 10px 80px 10px 10px;
+    background-color: var(--button__in);
+}
+
 .reg-left__img {
-    margin-right: 10px;
     background-image: url(../img/facebook.svg);
     background-repeat: no-repeat;
-    padding: 8px;
+    background-position: center;
+    width: 20px;
+    height: 20px;
 }
 
 .reg-right__img {
-    width: 1rem;
+    background-image: url(../img/linkedin.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 20px;
+    height: 20px;
     margin-right: 10px;
-}
-
-.reg-right {
-    color: var(--white);
-    padding: 10px 50px 10px 10px;
-    background-color: var(--button__in);
 }
 
 .reg-divided {
@@ -123,7 +145,7 @@ h1 {
 
 .reg__text {
     color: var(--second__text);
-    font-size: 1rem;
+    font-size: 0.8em;
 }
 
 .reg-form {
@@ -133,17 +155,10 @@ h1 {
 
 .reg-form__left {
     padding-left: 10px;
-    /* padding-right: 90px; */
     border-left: 2px solid var(--border);
     border-top: 1px solid var(--border__dipper);
     border-right: 1px solid var(--border__dipper);
     border-bottom: 1px solid var(--border__dipper);
-}
-
-/* ------- form --------  */
-
-.form__radio {
-
 }
 
 .label__text {
@@ -153,7 +168,6 @@ h1 {
 .reg-form__right {
     padding-left: 10px;
     border: 1px solid var(--border__dipper);
-    /* padding-right: 90px; */
 }
 
 .input {
@@ -167,6 +181,38 @@ h1 {
 
 .input::-webkit-input-placeholder {
     color: black;
+}
+
+.radio {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio-item input{
+    margin-right: 10px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width:  15px;
+    height: 15px;
+    border: 1px solid var(--second__text);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+input[type="radio"]:hover {
+    border: 3px solid var(--border);
+}
+
+input[type="radio"]:checked {
+    border: 3px solid var(--border);
 }
 
 .radio__hint {
@@ -187,7 +233,6 @@ h1 {
     opacity: 0; 
     transition: 0.5s; 
     pointer-events: none; 
-    background: var(--white); 
     color: var(--hint);
     padding: 0.5em; 
     width: 200px;
@@ -195,6 +240,7 @@ h1 {
     box-shadow: 42px 42px 84px #d7d7d7,
     -42px -42px 84px #e9e9e9;
 }
+
   [data-title]:hover::after {
     opacity: 1; 
 }
@@ -205,7 +251,11 @@ h1 {
     margin-top: 70px;
 }
 
-label > a:visited {
+.flag__cl {
+    color: var(--second__text);
+    cursor: default;
+}
+.flag > a:visited {
     color: var(--border);
 }
 
@@ -213,6 +263,26 @@ label > a:visited {
      text-decoration: underline;
 }
 
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + span {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+input[type="checkbox"] + span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px; 
+    border-radius: 3px;
+    border: 1px solid var(--divided);
+}
 
     /* ---- create ----  */
 
@@ -226,4 +296,99 @@ label > a:visited {
     color: var(--white);
     font-size: 1rem;
     border-radius: 5px;
+}
+
+
+    /* ---- media ---- */
+
+
+
+@media screen and (max-width: 1200px) {
+
+h1 {
+    font-size: 1.5em;
+    padding-bottom: 5px;
+}
+
+h3 {
+    padding-bottom: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main {
+    margin: 25px;
+    width: 0;
+    align-items: center;
+}
+
+.img__bg {
+    display: none;
+}
+
+.section__right {
+    width: auto;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.reg {
+    margin-top: 30px;
+}
+.reg-button__left {
+    padding: 5px 40px 5px 5px;
+}
+
+.reg-button__right {
+    padding: 5px 40px 5px 5px;
+}
+
+.reg-left__img {
+    padding-right: 20px;
+}
+
+.reg-right__img {
+    margin-right: 10px;
+}
+
+.reg-divided {
+    margin-top: 25px;
+}
+
+.reg__text {
+    font-size: 0.8em;
+}
+
+.reg-form {
+    margin-top: 50px;
+}
+
+.reg-form__left {
+    padding-left: 10px;
+}
+
+.reg-form__right {
+    padding-left: 10px;
+}
+
+.radio-item input{
+    margin-right: 10px;
+}
+
+
+.flag {
+    margin-top: 70px;
+}
+
+
+.create {
+    margin: 30px 0;
+}
+
+    
+
 }

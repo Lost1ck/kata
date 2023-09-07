@@ -11,27 +11,29 @@
     
     <div class="container">
 
-        <div class="main flex">
+        <div class="main grid">
             <section class="block">
                 <img class="img__logo" src="/img/logo.svg" alt="logo">
                 <img class="img__bg" src="/img/bg.jpg" alt="background img">
             </section>
             <section class="section__right">
                 <div class="reg">
-                    <div class="reg__header">
+                    <div class="header">
                         <h1>Get into it today</h1>
                         <h3>There is no change or obligation upon registration</h3>
                     </div>
                     <div class="reg__buttons flex">
-                        <a class="reg-left flex" href="#">
+
+                        <a class="reg-button__left flex" href="#">
                             <span class="reg-left__img"></span>
-                            <p href="#" class="reg__button-f">Register with Facebook</p>
+                            <p>Register with Facebook</p>
                         </a>
                         
-                        <a class="reg-right flex" href="#">
-                            <img class="reg-right__img" src="/img/linkedin.svg" alt="">
+                        <a class="reg-button__right flex" href="#">
+                            <span class="reg-right__img"></span>
                             <p>Register with Linkedin</p>
                         </a>
+                        
                     </div>
                     <div class="reg-divided flex">
                         <p class="divided flex"></p>
@@ -56,38 +58,42 @@
                     </div>
 
                     <div class="reg">
-                        <div class="">
-                            <h2>What type of investor are you?</h2>
-                            <h3>Select the type of investor you are below</h3>
+                        <div class="reg__text">
+                            <h2 class="reg-h2">What type of investor are you?</h2>
+                            <h3 class="reg-h3">Select the type of investor you are below</h3>
                         </div>
-                        <div class="form-radio flex">
-                            <div class="radio">
-                                <input id="radio-1" type="radio" name="radio" checked>
-                                <label for="radio-1">Individual</label>
-                                <abbr data-title="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">&#9432;</abbr>
-                            </div>
 
-                            <div class="radio">
-                                <input id="radio-2" type="radio" name="radio">
-                                <label for="radio-2">Business</label>
-                                <abbr data-title="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">&#9432;</abbr>
+                        <div class="radio flex">
+                            <div class="radio-item">
+                                <label  class="radio-container">
+                                    <input type="radio" name="radio" checked>Individual
+                                    <span data-title="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">&#9432;</span>
+                                </label>
                             </div>
-
-                            <div class="radio">
-                                <input id="radio-3" type="radio" name="radio">
-                                <label for="radio-3">IRA</label>  
-                                <abbr data-title="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">&#9432;</abbr>
+                            <div class="radio-item">
+                                <label  class="radio-container">
+                                    <input type="radio" name="radio">Business
+                                    <span data-title="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">&#9432;</span>
+                                </label>
                             </div>
-
-                            <div class="radio">
-                                <input id="radio-4" type="radio" name="radio">
-                                <label for="radio-4">Trust</label>
-                                <abbr data-title="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">&#9432;</abbr>
+                            <div class="radio-item">
+                                <label  class="radio-container">
+                                    <input type="radio" name="radio">IRA
+                                    <span data-title="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">&#9432;</span>
+                                </label>
+                            </div>
+                            <div class="radio-item">
+                                <label  class="radio-container">
+                                    <input type="radio" name="radio">Trust
+                                    <span data-title="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">&#9432;</span>
+                                </label>
                             </div>
                         </div>
+
                         <div class="flag">
-                            <input class="flag__item" id="flag-1" type="checkbox" name="agree with the terms">
-                            <label for="flag-1">I agree to the terms and revieving notifications from iintoo <a href="#"><span class="flag__bl">View full terms</span></a></label>
+                            <input class="flag__item" type="checkbox" name="agree with the terms">
+                            <span class="flag__cl">I agree to the terms and revieving notifications from iintoo</span>
+                            <a href="#" class="flag__bl">View full terms</a>
                         </div>
                         <div class="create">
                             <a href="#" class="account">Create Account</a>
