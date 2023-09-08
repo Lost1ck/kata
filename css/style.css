@@ -68,14 +68,14 @@ h3 {
     background-color: var(--white);
 }
 
-.img__logo {
+.img-logo {
     margin: 20px;
     width: 100px;
     height: auto;
     position: absolute;
 }
 
-.img__bg {
+.img-bg {
     width: 650px;
     height: 750px;
 }
@@ -94,7 +94,7 @@ h3 {
     margin-top: 30px;
 }
 
-.reg__buttons {
+.reg-buttons {
     align-items: center;
     justify-content: space-between;
 }
@@ -113,7 +113,7 @@ h3 {
     background-color: var(--button__in);
 }
 
-.reg-left__img {
+.reg-left-img {
     background-image: url(../img/facebook.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -121,7 +121,7 @@ h3 {
     height: 20px;
 }
 
-.reg-right__img {
+.reg-right-img {
     background-image: url(../img/linkedin.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -143,7 +143,7 @@ h3 {
     border: 0.5px solid var(--divided);
 }
 
-.reg__text {
+.reg-text {
     color: var(--second__text);
     font-size: 0.8em;
 }
@@ -161,7 +161,7 @@ h3 {
     border-bottom: 1px solid var(--border__dipper);
 }
 
-.label__text {
+.label-text {
     color: var(--second__text)
 }
 
@@ -325,7 +325,7 @@ h3 {
     align-items: center;
 }
 
-.img__bg {
+.img-bg {
     display: none;
 }
 
@@ -347,11 +347,11 @@ h3 {
     padding: 5px 40px 5px 5px;
 }
 
-.reg-left__img {
+.reg-left-img {
     padding-right: 20px;
 }
 
-.reg-right__img {
+.reg-right-img {
     margin-right: 10px;
 }
 
@@ -359,7 +359,7 @@ h3 {
     margin-top: 25px;
 }
 
-.reg__text {
+.reg-text {
     font-size: 0.8em;
 }
 
