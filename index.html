@@ -10,55 +10,55 @@
 <body>
     
     <div class="container">
-
-        <div class="main grid">
+        <div class="main flex">
 
             <section class="block">
                 <img class="img-logo" src="/img/logo.svg" alt="logo">
                 <img class="img-bg" src="/img/bg.jpg" alt="background img">
             </section>
 
-            <section class="section__right">
+            <section class="section__right flex-1">
                 <div class="reg">
                     <div class="header">
                         <h1>Get into it today</h1>
                         <h3>There is no change or obligation upon registration</h3>
                     </div>
-                    <div class="reg-buttons flex">
+                    <div class="reg-buttons flex flex-w">
 
                         <div>
-                            <a class="reg-button__left flex" href="#">
+                            <a class="reg-button__left reg-bns flex" href="#">
                                 <span class="reg-left-img"></span>
                                 <p>Register with Facebook</p>
                             </a>
                         </div>
 
                         <div>
-                            <a class="reg-button__right flex" href="#">
+                            <a class="reg-button__right reg-bns flex" href="#">
                                 <span class="reg-right-img"></span>
                                 <p>Register with Linkedin</p>
                             </a>
                         </div>
                         
                     </div>
-                    <div class="reg-divided flex">
+                    <div class="reg-divided flex flex-w">
                         <p class="divided flex"></p>
                         <p class="reg-text">OR</p>
                         <p class="divided"></p>
                     </div>
 
-                    <div class="reg-form flex">
-                        <form class="reg-form__left">
-                            <label class="reg-label">
-                            <p class="label-text">Email</p>
-                            <input class="input" type="email" placeholder="gus.goldfish@gmail.com">
+                    <div class="reg-form flex flex-w">
+
+                        <form class="reg-form__left reg-form__color">
+                            <label class="reg-label" for="left">
+                                <p class="label-text">Email</p>
+                                <input id="left" class="input" type="email" placeholder="gus.goldfish@gmail.com">
                             </label>
                         </form>
 
-                        <form class="reg-form__right">
-                            <label class="reg-label">
-                            <p class="label-text">Phone</p>
-                            <input class="input" type="text">
+                        <form class="reg-form__right reg-form__color">
+                            <label class="reg-label" for="right">
+                                <p class="label-text">Phone</p>
+                                <input id="right" class="input" type="text">
                             </label>
                         </form>
                     </div>
@@ -69,7 +69,7 @@
                             <h3 class="reg-h3">Select the type of investor you are below</h3>
                         </div>
 
-                        <div class="radio flex">
+                        <div class="radio flex flex-w">
                             <div class="radio-item">
                                 <label  class="radio-container">
                                     <input type="radio" name="radio" checked>Individual
@@ -97,11 +97,14 @@
                         </div>
 
                         <div class="flag">
-                            <input class="flag-item" type="checkbox" name="agree with the terms">
-                            <span class="flag__cl">I agree to the terms and revieving notifications from iintoo</span>
+                            <label for="checkbox">
+                                <input id="checkbox" class="flag-item" type="checkbox" name="agree with the terms" checked>
+                                <span class="flag__cl">I agree to the terms and revieving notifications from iintoo</span>
+                            </label>
                             <a href="#" class="flag__bl">View full terms</a>
                         </div>
-                        <div class="create">
+
+                        <div class="create flex">
                             <a href="#" class="account">Create Account</a>
                         </div>
                     </div>
