@@ -11,16 +11,17 @@
 }
 
 :root {
-    --background: #EFF6FF;
     --basic: #2A4A5C;
     --button__fb: #255A9B;
     --button__in: #0076B6;
-    --white: #fff;
     --second__text: #7B8A92;
     --divided: #96A5B1;
     --border: #3698FB;
-    --border__dipper: #EEEEEE;
     --hint:  #AFAFAF;
+    --background: #EFF6FF;
+    --border__dipper: #EEEEEE;
+    --white: #FFFFFF;
+
 }
 
 body {
@@ -83,12 +84,10 @@ html {
 .img-logo {
     margin: 20px;
     width: 100px;
-    height: auto;
     position: absolute;
 }
 
 .img-bg {
-    object-fit: cover;
     width: 700px;
     height: auto;
 }
@@ -129,7 +128,6 @@ html {
 .reg-left-img {
     background-image: url(../img/facebook.svg);
     background-repeat: no-repeat;
-    background-position: center;
     width: 20px;
     height: 20px;
 }
@@ -138,7 +136,6 @@ html {
     background-image: url(../img/linkedin.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     width: 20px;
     height: 20px;
     margin-right: 10px;
@@ -151,7 +148,6 @@ html {
 }
 
 .divided {
-    display: block;
     margin: 5px 15px;
     width: 100px;
     border: 0.5px solid var(--divided);
@@ -223,7 +219,6 @@ input[type="radio"] {
 }
 
 .radio-container {
-    display: flex;
     align-items: center;
     cursor: pointer;
 }
@@ -251,7 +246,7 @@ input[type="radio"]:checked {
     position: absolute; 
     left: -100px; 
     top: 2em; 
-    opacity: 0; 
+    opacity: 0;
     transition: 0.5s; 
     pointer-events: none; 
     color: var(--hint);
